@@ -1,0 +1,233 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+::selection{
+    background-color: #80429f;
+    color: #fff;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Noto Kufi Arabic', sans-serif;
+}
+/* Start Header */
+.logo{
+    width: 150px;
+}
+.flag{
+    width: 30px;
+}
+header{
+    background-color: #2f2f2df5;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+header ul li a{
+    font-size: 13px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+header ul li a:hover{
+    color: rgba(255,255,255,.5) !important;
+}
+header .container div div{
+    cursor: pointer;
+}
+header .container div .flag-box{
+    padding: 3px;
+}
+header .container div div span{
+    font-size: 13px;
+}
+.icon{
+    cursor: pointer;
+}
+@media (min-width: 992px) {
+    .icon{
+        display: none;
+    }
+}
+@media (max-width: 991px) {
+    header .container ul{
+        position: absolute;
+        right: 0;
+        flex-direction: column;
+        background-color: #2f2f2d;
+        width: 100%;
+        top: 80.42px;
+        padding: 30px !important;
+    }
+    header .container ul li{
+        margin: 0 !important;
+        margin-bottom: 10px !important;
+    }
+    header .container div{
+        display: none !important;
+    }
+}
+/* Start Landing */
+.landing{
+    height: 100vh;
+    background-image: url(../images/home.jpg);
+    background-size: cover;
+}
+@media (max-width: 991px) {
+    .landing{
+        background-position: center;
+    }
+}
+.landing::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #00000080;
+}
+.landing .container{
+    height: inherit;
+}
+.landing .container .content h1{
+    font-size: 45px;
+}
+.landing .container .content a{
+    background-color: #935CAE ;
+    width: fit-content;
+    transition: 0.3s;
+    margin: 20px auto;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.landing .container .content a:hover{
+    background-color: #80429f;
+}
+.products{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.products .container .row .box{
+    height: 250px;
+    border-top: 3px solid #fff;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.products .container .row .box::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #00000020;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.products .container .row .box:hover{
+    border-top: 3px solid #80429f;
+}
+.products .container .row .one{
+    background-image: url(../images/inWALv9JbiDYHTe2Tgts9SKtvNBGdDBV_706b6eeaa90100e39d313f5ef5ce0ec4890db7009018dc553ef3f0870b88df45.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.products .container .row .two{
+    background-image: url(../images/dbHp2ydUlej5asicIPTonloibeh4dWfj_4996cac43afb0708940a6ee05f6cc605e84f6ee8020c6887d34cca43d9c25182.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.products .container .row .three{
+    background-image: url(../images/OYkOv660kxoRbsM2yUHB07PjJ86Bem0h_5d5bbcd2328773e25ee37cbe6c1ba9e6cdd99782b9368433ae18d362f3e8af7b.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.products .container .row .four{
+    background-image: url(../images/Xpumiescp5gnKgPdtKbYs9F76bZJKiOR_b4733a83a19d9747a7b28f57ad7d3e62bb2312101075e85ac157fb40d9a1f5a0.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.products .container .row .five{
+    background-image: url(../images/zjImFtBgc9aatFAYurHr4rMyBfV6nJlw_49ebbcb358fb3a4c888b79f2d3aa9c43804b74c78f794696b354cc1adc9e013d.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.products .container .row .six{
+    background-image: url(../images/O33tbspe0XhYRwlq8Ow9FaagcqfxkCyy_123ef2c5217d5175a8f41576ebd461e38d2a9fc89bd095b14ca927a6eb9d8a02.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.products .container .row .seven{
+    background-image: url(../images/nNSprD1pucBdGgm9Vxx9EiXgleGqfzdJ_9053cbd3f4a3670844a02fa038608b05b7ee3a852d1410348ddecd44eb091684.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.products .container .row .eight{
+    background-image: url(../images/pFWOjuCynTF5bSmzubsuvhEsynvT0P1T_c35f84b7a6b084e0c2f34aa1c54cac64691c85040c0190edaf207e801a77ab9f.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.products .container .row .nine{
+    background-image: url(../images/SC9QfqcA83IpcomkNMl3cGgn5q0XAqqW_1f9ac46c6100760e25944dab51a84d5d01ced3a74dfaf9c937f59454b23e45e0.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.products .container .row .ten{
+    background-image: url(../images/vhApUbT5AingkLj2N7dmCAUrju06YzTU_6e721b2c2c704a907b6112034ad9f62fe981868dbc64a85ee31b56daecc0b1dc.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.products .container .row .eleven{
+    background-image: url(../images/IwV3JkoRiGqkYWl7F0E3hNrd9svL8kzL_b897a8310723fbf517ec75a2f66ac0161a3e962b878d247518a232c92967a921.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.products .container .row .twelve{
+    background-image: url(../images/9dSoJx1DOi8ZqahVpE4xiFq0ulFB19gC_cd0eb134a2073e31cf4525028bbba71638f4a6d94af7969c7ecae84ad95423ad.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.products .container .row .thirteen{
+    background-image: url(../images/1lCTceYa4mFl3XKFUHJxARaXixlhqA8l_7cbee4eb548ce0450cce8a21ecd29225512703e766a63546ac33675f798be325.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.products .container .row .fourteen{
+    background-image: url(../images/BuildingMaterials.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* Start Footer */
+@media (max-width: 991px) {
+    footer .container div.copy{
+        flex-direction: column;
+    }
+}
+footer .container p.copy{
+    font-size: 12px;
+}
+footer .container p.copy i{
+    color: #80429f;
+}
+.active{
+    display: none !important;
+}
+@media (min-width: 992px) {
+    .active{
+        display: flex !important;
+    }
+}
